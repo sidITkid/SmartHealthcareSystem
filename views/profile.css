@@ -1,0 +1,40 @@
+*
+{
+	margin: 0px;
+	padding: 0px;
+}
+
+body
+{
+	background:black;
+}
+
+.profile
+{
+	width: 80%;
+	margin-top: 5%;
+	margin: auto;
+	background-color: blue;
+	padding-top: 3%;
+	padding-bottom: 10%;  
+}
+
+.image
+{
+	width: 30%;
+	background-color: green;
+	margin: auto;
+	padding: 2%;
+}
+
+.user
+{
+	padding: 2%;
+	margin-left: 35%;
+}
+
+.user2
+{
+	margin-top: 2%;
+	margin-left: 38%;
+}

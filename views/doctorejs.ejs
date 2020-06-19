@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="/doctorprofile.css">
+     <script type="text/javascript" src="http://livejs.com/live.js"></script>
+
+	<title>About doctor</title>
+</head>
+<body>
+       	<% if(!data.length)
+        {%>
+             <script>alert("doctor not present");</script>
+        <%}
+        else
+        { %>
+
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+            <div class="card">
+              <img id="img" src="user.png" alt="John" style="width:25%;margin-top:1em;">
+              <div class="profile">
+                  <h1>Dr. <%=name%> , <%=qualificatn%></h1>
+                  <h4>Specialization: <%=specializatn%></h4>
+                  <h4>zipcode: <%=zipcode%></h4>
+              </div>
+              <h3>About Dr. <%=name%></h3>
+              <div class="about">
+              <p>Dr. <%=name%> is board certified with the American Board of Internal Medicine and current physician at SOHO Health NY. Providing general medical care in the heart of SOHO. Dr. Fagelman provides a full range our services include sick visits, routine physicals, treatment of chronic medical conditions to travel counseling for that upcoming trip. The office accepts most insurance plans.</p>
+              </div>
+              <h3>Specialities</h3>
+              <div class="about">
+              <p style="text-align:center;"><%=specializatn%></p>
+              </div>
+              <h3>Hospital Affiliations</h3>
+              <div class="about">
+              <p style="text-align:center;"><%=hospital%></p>
+              </div>
+              <h3>Board Certificate</h3>
+              <div class="about">
+              <p style="text-align:center;">Indian Board of Internal Medicine</p>
+              </div>
+              <h3>Language Spoken</h3>
+              <div class="about">
+              <p style="text-align:center;">English/Hindi</p>
+              </div>
+
+              <p><a href="/appointment/?user=<%=user%>&doctor=<%=name%>"><button>Take Appointment</button></a></p>
+            </div>
+            
+            <% } %>
+
+</body>
+</html>

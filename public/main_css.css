@@ -1,0 +1,194 @@
+*
+{
+	margin:0;
+	padding:0;
+}
+
+body {
+
+        background:#84ceeb;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;
+        color: #00234B;
+        font-family: "kievit-slab-book", Georgia, serif;
+        line-height: 1;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+ul {
+  list-style-type: none;
+  /*margin: .4%;*/
+  padding: 1.5%;
+  overflow: hidden;
+  /*background-color: #333;*/
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+
+li {
+  float: right;
+}
+
+
+li a {
+  font-size: 90%;
+  display: block;
+  color: black;
+  margin-left: 15px;
+  text-align: center;
+  padding: 14px 18px;
+  text-decoration: none;
+}
+
+img[id=user]
+{
+  cursor: pointer;
+  margin-left: 45px;
+  margin-right: 50px;
+  margin-top: 10px;
+}
+
+ul p
+{
+  font-weight: 400;
+}
+
+li a:hover {	
+  text-decoration:underline; 
+  font-weight: 400;
+  border-radius: 8px;
+  background-color: #c1c8e4;
+}
+
+.active {
+  border-radius: 8px;
+  background-color: #4CAF50;
+}
+
+.nav-bar
+{
+	background-color: #8e8d8a;
+}
+
+
+#logo
+{
+	color:  #454547;
+	float:left;
+	padding:1.5%;
+	font-size: 2em;
+	text-decoration: none;
+	font-family: "kievit-slab-book", Georgia, serif;
+}
+
+#logo:hover
+{
+  color: black;
+}
+
+.form
+{
+  border-radius: 1%;
+	margin-left: 26%;
+	width: 48%;
+	margin-top: 10%;
+  margin-bottom: 10%;
+  background-color: #5680e9;
+}
+
+/*icons*/
+
+.row_box
+{
+  /*background: url("./images_for_mainpage/doctor.jpg") ;*/
+    background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;
+}
+
+.column {
+ 
+  float: left;
+  width: 25%;
+  padding: 5%;
+  height: 320px; 
+}
+
+.row h3
+{
+  font-family: "kievit-slab-book", Georgia, serif;
+  color: black;
+  margin-top: 20%;
+  padding-left:3%;
+}
+
+.row a
+{
+  text-decoration: none;
+}
+
+.row a:hover
+{
+  text-decoration: underline;
+  color: green;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*icons*/
+
+/*last rows*/
+
+.column1 {
+  /*background: #004080;*/
+  float: left;
+  width:  25%;
+  padding: 4%; 
+  /*overflow: hidden;*/
+}
+
+.row1 h4
+{
+  font-family: "kievit-slab-book", Georgia, serif;
+  color: white;
+  /*margin-top: 20%;*/
+  /*padding-left:2.7%;*/
+}
+
+.row1 a
+{
+  text-decoration: none;
+}
+
+.row1:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.row1 a:hover
+{
+  color: green;
+}
+
+.copyr
+{
+  margin-left: 10%;
+  float: left;
+  padding: 1%;
+  /*margin-bottom: 10%: */
+}
+
+#private:hover,#termsa:hover
+{
+  color: green;  
+}

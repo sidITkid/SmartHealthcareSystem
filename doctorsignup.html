@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>APPOINTMENT</title>
+  <link rel="stylesheet" href="docsignup.css">
+  </link>
+</head>
+
+<body>
+  <div class="notbody">
+    <header class="head">
+      <h1>Doctor's Registration Form</h1>
+    </header>
+<div class="form">
+      <form action="/docsignup" method="POST" name="regForm">
+        <table border="0" cellpadding="0" cellspacing="10" width=30% height=50% align=left class="registrationForm">
+          <tbody>
+            <tr>
+              <td><br><b>Enter Name:</b></td>
+              <td><input type="text" name="doctorname" class="txtbox" onfocus="info('name')" onblur="clear_display()" required /></td>
+            </tr><br>
+            <tr>
+              <td><b><br>Your Email: </b></td>
+              <td><input type="email" name="doctoremail" class="txtbox" onfocus="info('dn')" onblur="clear_display()" required /><b></td>
+            </tr>
+            <tr>
+              <td><b><br>Password: </b></td>
+              <td><input type="password" name="doctorpassword" class="txtbox" onfocus="info('dn')" onblur="clear_display()" required /><b></td>
+            </tr>
+            <tr>
+              <td><br><b>Phone No:</b></td>
+              <td><input type="number" maxlength="10" pattern="[0-9]{10}" name="phone" class="txtbox" onfocus="info('l')" onblur="clear_display()"/required> <br></td>
+            </tr> 
+            <tr>
+              <td><br><b>Zip Code:</b></td>
+              <td><input type="text" name="doctorzipcode" class="txtbox" maxlength="6" onfocus="info('l')" onblur="clear_display()" pattern="[0-9]{6}" required> <br></td>
+            </tr>
+            <tr>
+              <td><b><br>Your Qualification: </b></td>
+              <td><input type="text" name="qualification" class="txtbox" onfocus="info('dn')" onblur="clear_display()" required /><b></td>
+            </tr>
+            <tr>
+              <td><b><br>Hospital: </b></td>
+              <td><input type="text" name="hospital" class="txtbox" onblur="clear_display()" required /><b></td>
+            </tr>
+            <tr>
+              <td><b><br>Specialisation:</b></td>
+              <td>
+                <div class="styled-select">
+                  <select name="specialisation" class="select" onfocus="info('specialisation')" onblur="clear_display()"/required>
+  <option title="person who treats heart" style="background-color: white;">Cardiologist</option>
+  <option title="person who treats heart" style="background-color: white;">Eye Doctor</option>
+  <option title="person who treats heart" style="background-color: white;">Primary Care</option>
+  <option title="person who treats heart"  style="background-color: white;">Dentist</option>
+  <option title="person who treats heart"  style="background-color: white;">Dermatologist</option>
+  <option title="person who treats heart"  style="background-color: white;">Gyneacologist</option>
+  <option title="person who treats heart"  style="background-color: white;">Gastroenterologist</option>
+  <option title="person who treats heart"  style="background-color: white;">ENT</option>
+              </td>
+    
+    </tr>  
+      <td colspan="2" align="center">
+        <input type="submit" value="submit" class="btn" onclick="return validateData();" />
+        <input type="reset" value="clear" class="btn" /></td>
+    </tr>
+    </tbody>
+    </table>
+    </form>
+
+  <div class="Button">
+    <table border="0" cellpadding="15" cellspacing="0" height=15% width=100% style="text-align:center;">
+      <tbody>
+      </tbody>
+    </table>
+  </div>
+
+  </div>
+
+  </div>
+</div>
+  <footer id="footer">
+    <div class="copyright">&copy; Reserved:
+      <a href="_self">DOCHERE</a>. Duplication of this website in any mannner is illegal: <a href="_self">Privacy policy</a>.
+    </div>
+  </footer>
+</body>
+
+</html>

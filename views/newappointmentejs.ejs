@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>New Appointment</title>
+	<link rel="stylesheet" href="">
+</head>
+	
+<style type="text/css" media="screen">
+
+body
+{
+  background-color: #84ceeb;
+  font-weight: 500;
+  font-size: 1.2em;
+}		
+
+.row
+{
+  margin-left: 5%;
+}
+
+.column {
+  float: left;
+  width: 15%;
+  padding: 5%;
+  height: 200px; 
+}
+
+.row h3
+{
+  font-family: "kievit-slab-book", Georgia, serif;
+  color: black;
+  margin-top: 20%;
+  padding-left:3%;
+}
+
+.row a
+{
+  text-decoration: none;
+}
+
+.row a:hover
+{
+  text-decoration: underline;
+  color: green;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+</style>
+
+<body>
+
+<div class="row">
+  
+  <div class="column">
+   <a href="/healthcare?care=primarycare&user=<%=user%>">
+   	<img src="./images_for_mainpage/primarycare.svg">
+    <h3>Primary Care</h3>
+  </a>
+  </div>
+  
+  <div class="column">
+  <a href="/healthcare?care=gyneacologist&user=<%=user%>">
+   <img src="./images_for_mainpage/obgyn.svg">
+   <h3>OBGYN</h3>
+  </a>
+  </div>
+  
+  <div class="column">
+  <a href="/healthcare?care=dentist&user=<%=user%>">
+  	 <img src="./images_for_mainpage/dentists.svg">
+     <h3>Dentist</h3>
+  </a>
+  </div>
+  
+  <div class="column">
+    <a href="/healthcare?care=dermatologist&user=<%=user%>">
+    	<img src="./images_for_mainpage/dermatology.svg">
+        <h3>Dermatologist</h3>
+    </a>
+  </div>
+
+</div>
+
+<div class="row">
+  <div class="column">
+   <a href="/healthcare?care=cardiologist&user=<%=user%>">
+    	<img src="./images_for_mainpage/therapy.svg">
+        <h3>cardiologist</h3>
+    </a>
+  </div>
+  <div class="column">
+    <a href="/healthcare?care=eyedoctor&user=<%=user%>">
+    	<img src="./images_for_mainpage/optometry.svg">
+        <h3>Eye doctor</h3>
+    </a>
+  </div>
+  <div class="column">
+   <a href="/healthcare?care=ent&user=<%=user%>">
+    	<img src="./images_for_mainpage/ent.svg">
+        <h3>ENT</h3>
+    </a>
+  </div>
+  <div class="column">
+     <a href="/healthcare?care=gastroenterologist&user=<%=user%>">
+      	<img src="./images_for_mainpage/gastro.svg">
+          <h3>gastroenterologist</h3>
+      </a>
+  </div>
+
+</div>
+
+
+</body>
+</html>

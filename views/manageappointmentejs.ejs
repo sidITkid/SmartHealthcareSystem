@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Manage Appointments</title>
+	<style type="text/css" media="screen">
+		body
+		{
+			background:#659dbd;
+		}
+		button {
+		  margin-bottom: 2.5em;
+		  padding: 100px;
+		}
+		.row
+		{
+			margin-top: 0;
+		}
+
+		.button-basic {
+			cursor: pointer; 
+			color: #fffff0;
+			padding: 1em 1.5em;
+			text-align: center;
+			text-decoration: none;
+			font-size: 1.4em;
+			border-radius: 100px;
+			border: 2px solid  black;
+			transition-duration: 0.8s; 
+			background-color:  #659dbd;
+			display: inline-block;
+		}
+		button:hover
+		 {
+			background-color:  white;
+			color:red;
+		 }
+		.column
+		{
+			text-align: center;
+			padding-top: 13%;
+			padding-bottom: 7%;
+			border-radius: 100px;
+			/*border:2px solid black;	*/
+			/*background-color: red;*/
+			float: left;
+			width: 22%;
+			margin-left: 8%;
+		}
+		button:hover
+		{
+			color: black;
+		}
+
+</style>
+
+<script type="text/javascript">
+	
+	function showhint()
+	{
+		document.getElementById("hint").innerHTML="<h3>To take new Appointment</h3>"
+	}
+
+	function removehint()
+	{
+		document.getElementById("hint").innerHTML=""
+	}
+
+	function showdelete()
+	{
+		document.getElementById("delete").innerHTML="<h3>To delete any appointment from tomorrow onwards.</h3><p>You can't delete past appointments</p>"
+	}
+
+	function removedelete()
+	{
+		document.getElementById("delete").innerHTML=""
+	}
+
+	function showall()
+	{
+		document.getElementById("all").innerHTML="<h3>To see all past Appointments</h3><h4>You can give feedback to the doctors you visited</h4>"
+	}
+
+	function removeall()
+	{
+		document.getElementById("all").innerHTML=""
+	}
+
+
+</script>
+
+
+</head>
+
+<body>
+
+<h1 style="margin-left: 25%; margin-right:25%"><marquee behavior=scroll direction="left	" scrollamount="10"><big>All Appointment Activities</big></marquee> </h1>
+<!-- Buttons - Basic Styling -->
+<div class="row">
+<div class="column">
+	<a href="/newappointment?user=<%=user%>"><button class="button-basic" onmouseover="showhint()" onmouseout="removehint()"> New Appointment</button></a>
+	<p id="hint"></p>
+</div>
+<div class="column">	
+	<a href="/deleteappointments/?user=<%=user%>"><button class="button-basic" onmouseover="showdelete()" onmouseout="removedelete()">Delete Appointment</button>
+	</a><p id="delete"></p>
+</div>
+<div class="column">
+<a href="/pastappointments/?user=<%=user%>"><button class="button-basic" onmouseover="showall()" onmouseout="removeall()">All Appointments</button>
+	</a><p id="all"></p>
+</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,199 @@
+*
+{
+	margin: 0px;
+	padding: 0px;
+}
+
+body
+{
+	background-image: url(./new1.jpeg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: center;
+	background-attachment: scroll;
+}
+
+p:first-letter
+{
+	font-size: 1.2em;
+	color: black;
+}
+
+p[id="tagline"]
+{
+	color:red;
+}
+
+h1:first-letter
+{
+	font-size: 1.2em;
+	color: red;
+}
+
+h1[id=tag]
+{
+	cursor: pointer;	
+}
+
+.headr
+{
+	margin-top: 10px;
+
+}
+
+.navi
+{
+	padding: 0.1%;
+	background: #356478;	
+	overflow: hidden;
+	/*position: fixed;*/
+	width: 100%;
+}
+
+a[id=subscribe]
+{
+	background:red;
+}
+
+.back a.home
+{
+	background :green;
+}
+
+.back a:hover
+{
+	color: red;
+	box-shadow: 1.5px 1.5px 1.5px 1.5px black;
+	text-decoration: underline;
+	border-radius: 8px;
+}
+
+a[id=subscribe]:hover
+{
+	color:red;
+
+}
+
+.back a
+{
+	float: left;
+	text-decoration: none;
+	color: black;
+	margin: .5%;
+	margin-left: 1%;
+	padding:10px;
+}
+
+a[href="login.html"]
+{
+	background: transparent;
+	border: 0.2px solid black;
+	border-radius: 8px;
+	float: right;
+}
+
+.container
+{
+	width:80%;
+	padding:3%;
+	overflow: hidden;
+	box-shadow: 4px 4px 4px 4px #888888;
+	margin-left: 6.8%;
+	background: #eef2f1;
+}
+
+.scroll
+{
+	background-attachment:  scroll;
+}
+
+.part1
+{
+	width: 100%;
+	background: red;
+}
+
+.image
+{
+	/*background: red;*/
+	box-shadow: 4px 4px 4px 4px #888888;
+	width: 35%;
+	float: left;
+	padding: 0px;
+	margin: 3%;
+}
+
+.police
+{
+	/*margin-left:5%;*/
+	width: 100%;
+}
+
+.content
+{
+	background: #4056a1;
+	text-align: justify;
+	padding: 5%;
+	font-size: 1.5em;
+}
+.content a
+{
+	text-decoration:none;
+	color:white;
+}
+
+.content a:hover
+{
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.sideimg
+{
+	width: 45%;
+	margin-left: 7%;
+	margin-top: 3%;
+	float: left;
+	box-shadow: 4px 4px 4px 4px #888888;
+}
+
+
+.sidebar
+{
+	width: 35%;
+	float: left;
+	margin-right: 2%;
+}
+
+.content1 a
+{
+	text-decoration: none;
+	text-align: justify;
+	padding: 5%;
+}
+
+.content1 a:hover
+{
+	text-decoration:underline;
+}
+
+.tabl
+{
+	/*background-color: red;*/
+	width: 80%;
+	padding: 3%;
+	margin-left: 6.8%;
+	/*background: #235244;	*/
+}
+
+.maint
+{
+	padding: 5%;
+}
+
+table , th ,td
+{
+	border: 2px solid black;
+	border-collapse: collapse;
+	padding: 5%;
+}

@@ -1,0 +1,68 @@
+*
+{
+	margin:0px;
+	padding: 0px;
+}
+
+body
+{
+		background: #379683;
+}
+
+p:first-letter
+{
+	font-size: 1.2em;
+}
+
+#sign
+{
+	text-align: center;
+	margin-top: 35%;
+	padding: 5%;
+	font-family: sans-serif;
+	font-weight: bold;
+	font-size: 1.5em;
+}
+
+.container
+{
+	text-align: center;
+	width: 30%;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: crimson;
+	border-radius: 15px;
+}
+
+input[type=text], input[type=password], input[type=number]
+{
+	width: 90%;
+	padding: 3%;
+	border-radius: 5px;
+	box-sizing: content-box;
+	margin:3%;
+	text-decoration: none;
+	border: none;
+}
+
+input[type=submit]
+{
+	padding: 3%;
+	width: 50%;
+	border-radius: 8px;
+	margin-top: 7%;
+	background-color: #bab2b5;
+}
+
+
+input[type=submit]:hover
+{
+	color: #f13c20;
+	cursor: pointer;
+	background-color:#c5cbe3;  
+}
+
+.signup
+{
+	padding: 5%;
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	 <script type="text/javascript" src="http://livejs.com/live.js"></script>
+
+	<title></title>
+	<!-- <link rel="stylesheet" href=""> -->
+	<style type="text/css" media="screen">
+		body
+		{
+			background-color: #84ceeb;
+		}
+
+		table {
+		  border-collapse: collapse;
+		  width: 100%;
+		}
+		
+		.Button
+		{
+			cursor: pointer;
+			padding-left: 20px; 
+			padding-right: 20px;
+			padding-top: 10px;
+			padding-bottom:  10px;
+			color: black;
+			border: none;
+			text-align: center;
+			text-decoration: none;
+			border-radius: 10px;
+			transition-duration: 0.4s; 
+			display: inline-block;
+			background-color: #a9a9a9;
+		}
+		.Button:hover
+		{
+			background-color: #2196f3;
+		}
+
+		th, td {
+		  text-align: center;
+		  padding: 15px;
+		}
+
+		tr:nth-child(even){background-color: #f2f2f2}
+
+		th {
+		  background-color: #4CAF50;
+		  color: white;
+		}
+	</style>
+</head>
+<body>
+	<h1 style="margin-left: 25%; margin-right:25%"><marquee behavior=scroll direction="right" scrollamount="10">Your past appointments</marquee> </h1>
+	<table style="width:100%">
+	  <tr>
+	    <th>Username</th>
+	    <th>Doctorname</th>
+	    <th>Patientname</th>
+	    <th>Gender</th>
+	    <th>Date</th>
+	    <th>Appointment</th>
+	  </tr>
+	  <% if (!data.length) { %> 
+         <script>alert('No Past appointments');</script> 
+      <% } 
+       else
+      { %>
+		<% for(var i=0; i<data.length; i++) {%>
+			<tr>
+			<td><%= data[i].patientusername%></td>
+			<td><%= doctors[i].name%></td>
+			<td><%= data[i].patientname%></td>
+			<td><%= data[i].gender%></td>
+			<td><%= data[i].date%></td>
+			<td>
+				<button class="Button" onclick="location.href='/delete/?date=<%= data[i].date%>&user=<%= data[i].patientusername%>'">delete</button></td>
+			</tr>
+		<% } %>
+	 <% } %>
+	</table>
+</body>
+</html>

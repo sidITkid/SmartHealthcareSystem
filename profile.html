@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>About doctor | <%= name%></title>
+    <link rel="stylesheet" href="./public/doctorprofile.css">
+</head>
+<body>
+        
+    <div class="profile">
+        <div class="image">
+            <img src="./public/user.png" class="user" width="100px"/>
+            <p class="user">Dr. <%=name%> , <%=qualificatn%></p>
+        </div>
+            <hr>
+        <div class="content">
+            <div class="mail">
+            <p class="user2">E-mail:<%=name%>123@gmail.com</p>
+            </div>
+            <div class="mail">
+            <p class="user2">
+                <ul class="user2">Specialization
+                    <br>
+                    <li><%=specializatn%></li>
+                </ul>
+            </p>
+            </div>
+            <div class="mail">
+            <p class="user2">
+                <ul class="user2">Hospital:
+                    <br>
+                    <li><%=hospital%></li>
+                </ul>
+            </p>
+            </div>
+            <div class="mail">   
+            <button id="appoint">Take Appointment</button>
+            </div>
+        </div>      
+
+    </div>
+
+
+</body>
+</html>
